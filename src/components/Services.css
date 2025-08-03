@@ -1,0 +1,333 @@
+.services-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  position: relative;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.services-header-content {
+  flex: 1;
+  text-align: center;
+}
+
+.services-header .back-button {
+  background: #2a5298;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.services-header .back-button:hover {
+  background: #1e3f7a;
+}
+
+.services-header-content h1 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.services-header-content p {
+  margin: 0;
+  color: #666;
+  font-size: 16px;
+}
+
+.download-brochure-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.download-brochure-btn:hover {
+  background: #218838;
+  transform: translateY(-2px);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.service-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #2a5298, #1e3c72);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  border-color: #2a5298;
+}
+
+.service-card:hover::before {
+  transform: scaleX(1);
+}
+
+.service-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.service-card h3 {
+  margin: 0 0 15px 0;
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.service-description {
+  color: #666;
+  margin: 0 0 20px 0;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.service-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  background: #f8f9fa;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #555;
+  font-weight: 500;
+}
+
+.learn-more-btn {
+  background: linear-gradient(135deg, #2a5298, #1e3c72);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.learn-more-btn:hover {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  transform: translateY(-2px);
+}
+
+/* Service Modal Styles */
+.service-modal {
+  max-width: 600px;
+  width: 90%;
+}
+
+.service-modal-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.service-modal-icon {
+  font-size: 32px;
+}
+
+.service-modal-description {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.service-details {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.detail-section h4 {
+  margin: 0 0 15px 0;
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features-list li {
+  padding: 8px 0;
+  color: #555;
+  font-size: 14px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.features-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #2a5298;
+  font-weight: bold;
+}
+
+.quick-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.info-item:last-child {
+  border-bottom: none;
+}
+
+.info-label {
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.info-value {
+  color: #2a5298;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services-container {
+    padding: 15px;
+  }
+  
+  .services-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .services-header-content h1 {
+    font-size: 24px;
+  }
+  
+  .services-header-content p {
+    font-size: 14px;
+  }
+  
+  .download-brochure-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .service-card {
+    padding: 20px;
+  }
+  
+  .service-icon {
+    font-size: 36px;
+  }
+  
+  .service-card h3 {
+    font-size: 20px;
+  }
+  
+  .service-modal {
+    width: 95%;
+    margin: 20px;
+  }
+  
+  .info-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-header .back-button {
+    position: relative;
+    left: auto;
+    top: auto;
+    margin-bottom: 20px;
+  }
+  
+  .service-card {
+    padding: 15px;
+  }
+  
+  .service-icon {
+    font-size: 32px;
+  }
+  
+  .service-card h3 {
+    font-size: 18px;
+  }
+  
+  .learn-more-btn {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+} 
